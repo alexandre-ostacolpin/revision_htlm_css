@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Mes style  -->
+    <link rel="stylesheet" href="style_photo.css">
+    <!-- le css pour la lightbox -->
+
+    <title>Portfolio - Alexandre Osta-Col-Pin</title>
+  </head>
+  <body>
+    <!-- ==================== -->
+    <!-- ====== Navbar ====== -->
+    <!-- ==================== -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <!-- ml-auto : margin left automatique mettra le bouton à droite -->
+        <!-- aria-controls : pour l'accessibilité // aria-expanded="false" : on démarre avec le menu qui n'est pas étendu donc on démarre à false // navbar-toggler-icon le .svg du burger -->
+        <button class="navbar-toggle ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- collapse navbar-collapse : pour le masquer ou pas /// id="navbarToggler" qui est ciblé plus haut dans data-target -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <!-- tout est flex dans la ul // justify-content-center align-items-center centré horizontalement et verticalement -->
+          <ul class="navbar-nav w-100 d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a href="#accueil" class="nav-link text-dark">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link text-dark">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#apropos" class="nav-link text-dark">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link text-dark">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-dark">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== -->
+    <!-- ===== Accueil ===== -->
+    <!-- ==================== -->
+
+    <div class="bg-dark text-white text-center d-flex flex-colum align-items-center w-100 h-75 p-3 mx-auto" id="accueil">
+      <!-- mt-auto // pour centré verticalement en 2 éléments, en flex en mode colonne les 2 éléments vont se partager l'espace en hauteur -->
+      <div class="mx-auto">
+        <img src="img/man.svg" alt="avatar Alexandre Osta-Col-Pin Colombbus" class="imgProfil">
+        <h1>Salut, moi c'est Alexandre</h1>
+        <p class="lead">Je suis ancien joueur de haute compétitions</p>
+        <p class="lead">
+          <a href="#apropos" class="btn btn-sm btn-secondary">En savoir plus</a>
+        </p>
+      </div>
+
+      <div>
+        <p class="lead">Per aspera ad astra</p>
+      </div>
+
+    </div><!-- Fin div accueil -->
+
+
+    <!-- ==================== -->
+    <!-- ==== Portefolio ==== -->
+    <!-- ==================== -->
+
+    <!-- py-5 padding en haut et en bas -->
+    <div class="py-5" id="portfolio">
+      <h2 class="text-center mb-5 text-uppercase">Portfolio</h2>
+
+      <div class="container">
+        <div class="row">
+
+          <!-- col avec card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite01_750.jpg" alt="React alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Chaine de montagne</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark btn btn-sm btn-outline-secondary">Voir le code</a>
+
+                  <a href="#" target="blank" class="text-dark btn btn-sm btn-outline-secondary ml-2">Voir le projet</a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite02.jpg" alt="animation alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Magnifique paysage</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite03_750.jpg" alt="appli météo alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>chaine de montagne 3</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col -->
+
+          <!-- col avec card 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite04_750.jpg" alt="Design responsiv alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Montagne plus la lune :)</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite05_750.jpg" alt="Site web alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Lac plus maison</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite06_750.jpg" alt="Visualisation de données alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Montagne rouge</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 7 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite07_750.jpg" alt="Java script alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>ouwaaaaaaaa !!!</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 8 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/dolomite08_750.jpg" alt="Grille css alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Montagne</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+          <!-- col avec card 9 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-4">
+              <img src="img/portugal_montagne09_750.jpg" alt="Framework bulma alexandre" class="car-img-top">
+              <div class="card-body">
+                <h4>Montagne portugal</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ducimus. Aut ex eum cum!</p>
+
+                <div class="btn-group">
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary">Voir le code</button></a>
+
+                  <a href="#" target="blank" class="text-dark"><button class="btn btn-sm btn-outline-secondary ml-2">Voir le projet</button></a>
+                </div>
+
+              </div><!-- Fin card-body -->
+            </div><!-- Fin card -->
+          </div><!-- Fin de col card -->
+
+        </div><!-- Fin row -->
+      </div><!-- Fin container -->
+    </div><!-- Fin div portfolio -->
+
+    <!-- ==================== -->
+    <!-- ===== A propos ===== -->
+    <!-- ==================== -->
+
+    <section class="bg-dark text-white" id="apropos">
+      <div class="container py-5">
+        <h2 class="text-center text-uppercase text-white">A propos</h2>
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-lg-4">
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, sit dolorum repellendus animi veniam repellat odit suscipit ea debitis, similique iste quam nam deleniti sunt voluptates voluptate explicabo nobis magni vero ab ipsum optio? Molestias architecto fuga quidem minus iure!</p>
+          </div>
+
+          <div class="col-lg-4">
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, sit dolorum repellendus animi veniam repellat odit suscipit ea debitis, similique iste quam nam deleniti sunt voluptates voluptate explicabo nobis magni vero ab ipsum optio? Molestias architecto fuga quidem minus iure!</p>
+          </div>
+
+        </div><!-- Fin row -->
+
+        <div class="text-center">
+          <a href="#contact" class="btn btn-wl btn-outline-light">Contactez-moi</a>
+        </div>
+
+      </div><!-- Fin container -->
+
+    </section><!-- Fin section -->
+
+    <!-- ==================== -->
+    <!-- ===== Service ====== -->
+    <!-- ==================== -->
+
+    <h2 class="text-center text-uppercase my-5">Mes services</h2>
+
+    <div class="container">
+      <!-- Justify content center pour centrer sur l'axe des y -->
+      <div class="row d-flex justify-content-center">
+
+        <!-- On centre sur l'axe des x les éléments contenus dans les contenus dans les colonnes -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content align-items-center">
+          <img src="img/vue.png" alt="Vue Alexandre Colombbus" class="imgServices">
+          <h2 class="text-center">Vue</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis saepe itaque vitae sapiente, nisi a nulla, incidunt rerum, ducimus fugit ea. Ad dolorem eveniet suscipit doloremque neque pariatur praesentium.</p>
+          <a href="#" class="btn btn-secondary">Voir mes projets</a>
+        </div><!-- Fin de col -->
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content align-items-center">
+          <img src="img/angular-icon.svg" alt="Vue Alexandre Colombbus" class="imgServices">
+          <h2 class="text-center">Angular</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis saepe itaque vitae sapiente, nisi a nulla, incidunt rerum, ducimus fugit ea. Ad dolorem eveniet suscipit doloremque neque pariatur praesentium.</p>
+          <a href="#" class="btn btn-secondary">Voir mes projets</a>
+        </div><!-- Fin de col -->
+
+        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content align-items-center">
+          <img src="img/React.png" alt="Vue Alexandre Colombbus" class="imgServices">
+          <h2 class="text-center">React</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis saepe itaque vitae sapiente, nisi a nulla, incidunt rerum, ducimus fugit ea. Ad dolorem eveniet suscipit doloremque neque pariatur praesentium.</p>
+          <a href="#" class="btn btn-secondary">Voir mes projets</a>
+        </div><!-- Fin de col -->
+
+      </div><!-- Fin row -->
+    </div><!-- Fin container -->
+
+
+                          <!-- ==================== -->
+                          <!-- ===== Contact ====== -->
+                          <!-- ==================== -->
+
+      <section class="bg-dark text-white" id="contact">
+        <div class="container">
+          <h2 class="text-center titreContacte">Contactez-moi</h2>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <form action="" method="POST" id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="prenom">Prénom *</label>
+                      <input type="text" name="prenom" id="prenom" class="form-control" required>
+                    </div>
+                  </div><!-- Fin col -->
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="nom">Nom *</label>
+                      <input type="text" name="nom" id="nom" class="form-control" required>
+                    </div>
+                  </div><!-- Fin col -->    
+                </div><!-- Fin row -->
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Prénom *</label>
+                      <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                  </div><!-- Fin row email -->
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="message">Votre message</label>
+                      <textarea name="message" id="message" cols="30" rows="4" class="form-control"></textarea>
+                    </div>
+                  </div><!-- Fin col -->
+
+                  <div class="col-md-12">
+                    <input type="submit" name="envoyer" value="Envoyer" class="btn btn-success">
+                  </div>
+                </div><!-- Fin row bouton -->
+              </form>
+
+            </div><!-- Fin col -->
+          </div><!-- Fin row -->
+        </div><!-- Fin container -->
+      </section>
+
+      <!-- ==================== -->
+      <!-- === Pied de page === -->
+      <!-- ==================== -->
+
+      <footer class="bg-dark text-white">
+        <p class="text-center">
+          Tout droits réservés - Alexandre, Colombbus
+        </p>
+      </footer>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Mon JS -->
+    <script src="app.js"></script>
+
+    <!-- Le JS pour la lightbox -->
+  </body>
+</html>
